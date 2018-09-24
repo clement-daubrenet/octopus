@@ -20,7 +20,6 @@ class Word(Base):
 
 if __name__ == '__main__':
     pymysql.install_as_MySQLdb()
-    url = 'postgresql+psycopg2://user:pass@01.02.03.04/my_db'
     url = 'mysql://root:rootroot@localhost:3306/octopus'
     engine = sqlalchemy.create_engine(url)
     session = sqlalchemy.orm.scoped_session(sqlalchemy.orm.sessionmaker())
