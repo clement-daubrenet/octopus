@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block body %}
+<!-- Bootstrap core CSS -->
+
+<link href="/static/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+
+<link href="/static/octopus.css" rel="stylesheet">
+
+<!------ A snippet I found online for the search bar ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<div class="container">
+    <br/>
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm" action="{{ request.path }}" method="get" >
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" id="url" name="url" placeholder="Enter an URL to generate a word cloud">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">Generate</button>
+                                    </div>
+                                    {% module xsrf_form_html() %}
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
+
+
+
+<!------ Another snippet I found from another project for the size logic ---->
+
+<div class="wordcloud">
+  {% for (word, size) in most_common_words %}
+    <span class="wc size-{{size}}">{{word}}</span>
+  {% end %}
+</div>
+{% end %}

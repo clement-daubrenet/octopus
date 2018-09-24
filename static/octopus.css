@@ -1,0 +1,104 @@
+/* Copyright (C) 2016, Twitter Bootstrap */
+
+/* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* spacing for mobile first views */
+.header,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 60em) {
+  .container {
+    max-width: 60rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.wc {
+    padding: 5px;
+}
+
+/* adjust sizes of the words in the clouds accordingly */
+.size-1 {
+    font-size: 7pt;
+}
+
+.size-2 {
+  font-size: 14pt;
+}
+
+.size-3 {
+    font-size: 21pt;
+}
+
+.size-4 {
+    font-size: 28pt;
+}
+
+.size-5 {
+    font-size: 35pt;
+}
+
+.size-6 {
+    font-size: 42pt;
+}
+
+.size-7 {
+    font-size: 49pt;
+}
+
+.size-8 {
+    font-size: 56pt;
+}
+
+.size-9 {
+    font-size: 63pt;
+}
+
+.size-10 {
+    font-size: 70pt;
+}

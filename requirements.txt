@@ -1,0 +1,13 @@
+dictalchemy
+sqlalchemy
+pytest
+requests
+beautifulsoup4
+nltk
+stop-words
+tornado
+pytest
+psycopg2
+pymysql
+pycrypto==2.6.1
+pycryptodome

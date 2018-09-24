@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block body %}
+  <table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>#</th><th>Primary key</th><th>Word</th><th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for index, word in enumerate(ordered_words) %}
+    <tr>
+        <!------ index + 1 because index starts at 0 ---------->
+      <th scope="row">{{ index + 1 }}</th>
+      <td>{{ word.id }}</td><td>{{ word.decoded }}</td><td>{{ word.count }}</td>
+    </tr>
+    {% end %}
+  </tbody>
+</table>
+{% end %}
