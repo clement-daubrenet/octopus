@@ -27,5 +27,4 @@ if __name__ == '__main__':
     session.configure(bind=engine, autoflush=False, expire_on_commit=False)
 
     Word.__table__.drop(session.bind)
-    print('here')
     Word.__table__.create(session.bind)

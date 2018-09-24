@@ -1,4 +1,3 @@
-import tornado
 from api import session
 from api.models.models import Word
 from sqlalchemy import desc
