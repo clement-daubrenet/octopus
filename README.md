@@ -38,14 +38,14 @@ By default, go on http://127.0.0.1:8888/
 
 # Tests:
 
-Integration tests for home page:
+- Integration tests for home page:
 
 python -m pytest tests/tests_home_integration.py
 
-Integration tests for admin page:
+- Integration tests for admin page:
 
 python -m pytest tests/tests_admin_integration.py
 
-Unit tests for home page:
+- Unit tests for home page:
 
 python -m pytest tests/tests_home_unit.py
