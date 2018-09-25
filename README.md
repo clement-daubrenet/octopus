@@ -4,6 +4,14 @@ A word cloud generator: enter an URL and get all the words (verbs and nouns only
 used on that web page. On the admin page, the sum of all the occurrences
 of all words parsed.
 
+# Demonstration
+
+Paste an URL in the search bar and click "generate":
+
+![Alt text](/docs/step1.png?raw=true "Optional Title")
+
+
+
 # General comments
 
 I focused most of my energy on code design + minimal test coverage + Docker.
