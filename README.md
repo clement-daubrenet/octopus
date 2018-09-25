@@ -1,7 +1,7 @@
 # Octopus: A word cloud generator
 
 A word cloud generator: enter an URL and get all the words (verbs and nouns only)
-used on that web page. On the admin page, the sum of all the occurrences
+used on the web page of this URL. On the admin page, the sum of all the occurrences
 of all words parsed.
 
 ## 1. Demonstration
