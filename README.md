@@ -10,7 +10,7 @@ Paste an URL in the search bar:
 
 ![Alt text](/docs/step0.png?raw=true "Search Bar")
 
-Then, "generate" will generate a word cloud for you (if the word is bigger, it appears more often):
+Then, "generate" will generate a word cloud for you (the bigger the word, the more often it appears):
 
 ![Alt text](/docs/step4.png?raw=true "Word Cloud")
 
