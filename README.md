@@ -6,7 +6,7 @@ of all words parsed.
 
 # General comments
 
-I focused most of my energy on Code design + minimal test coverage + Docker.
+I focused most of my energy on code design + minimal test coverage + Docker.
 
 Way less on the security aspects (private key in a file, config variables ...)
 and the overall frontend side of things that I clearly stole a bit
