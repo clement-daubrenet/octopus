@@ -12,8 +12,8 @@ Way less on the security aspects (private key in a file, config variables ...)
 and the overall frontend side of things that I clearly stole a bit
 everywhere on the web.
 
-Warning 1: You might have to change the ports of the web app and database depending on the allocations on your machine.
-I tested this app on 2 different machines and had to change the ports (e.g: 8000 to 8001 and 5000 to 6000)
+Warning 1: You might have to change the ports (in the docker-compose.yml) of the web app and database depending on the allocations on your machine.
+I tested this app on 2 different machines and had to change the ports (e.g: 8000 to 8001 and 5000 to 6000).
 
 Warning 2: the private key in a file is a security problem. It should be
 at least stored in an environment variable.
