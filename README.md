@@ -4,7 +4,7 @@ A word cloud generator: enter an URL and get all the words (verbs and nouns only
 used on that web page. On the admin page, the sum of all the occurrences
 of all words parsed.
 
-# Demonstration
+## Demonstration
 
 Paste an URL in the search bar:
 
@@ -21,7 +21,7 @@ the current count):
 
 
 
-# General comments
+## General comments
 
 I focused most of my energy on code design + minimal test coverage + Docker.
 
@@ -44,7 +44,7 @@ And you should be happy. Run the app on http://127.0.0.1:8000
 Warning 2: You might have to change the ports (in the docker-compose.yml) of the web app and database depending on the allocations on your machine.
 I tested this app on 2 different machines and had to change the ports (e.g: 8000 to 8001 and 5000 to 6000).
 
-# Manual installation:
+## Manual installation:
 
 If things go wrong and you want to do it old school:
 
@@ -76,7 +76,7 @@ Start using the web page:
 - By default, go on http://127.0.0.1:8888/
 
 
-# Tests:
+## Tests:
 
 Integration tests for home page:
 
