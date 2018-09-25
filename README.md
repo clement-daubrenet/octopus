@@ -76,7 +76,7 @@ Start using the web page:
 - By default, go on http://127.0.0.1:8888/
 
 
-## Tests:
+## 5. Tests:
 
 Integration tests for home page:
 
