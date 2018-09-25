@@ -6,9 +6,18 @@ of all words parsed.
 
 # Demonstration
 
-Paste an URL in the search bar and click "generate":
+Paste an URL in the search bar:
 
-![Alt text](/docs/step1.png?raw=true "Optional Title")
+![Alt text](/docs/step0.png?raw=true "Search Bar")
+
+Then, "generate" will generate a word cloud for you (if the word is bigger, it appears more often):
+
+![Alt text](/docs/step4.png?raw=true "Word Cloud")
+
+Eventually the admin tab will give you the total count of words (e.g: generating 2 times the same word cloud will double 
+the current count):
+
+![Alt text](/docs/step5.png?raw=true "Word Cloud Admin")
 
 
 
