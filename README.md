@@ -12,6 +12,13 @@ Way less on the security aspects (private key in a file, config variables ...)
 and the overall frontend side of things that I clearly stole a bit
 everywhere on the web.
 
+Warning 1: the private key in a file is a security problem. It should be
+at least stored in an environment variable.
+
+Warning 2: I got once an unexpected behavior in the admin (duplicated words
+instead of incrementing the same one). I could not reproduce since then.
+With more time, I would dig into this.
+
 
 # Docker installation
 
