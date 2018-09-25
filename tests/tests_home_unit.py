@@ -1,5 +1,6 @@
 from api.home.views import HomeHandler
 from unittest.mock import patch
+import uuid
 
 
 def test_get_most_common_words_empty():
@@ -37,8 +38,26 @@ def test_scale_frequencies():
 def test_add_word(add_mock, commit_mock):
     """
     Testing add word method.
+    :param add_mock: A database "add" operation mock
+    :param commit_mock: A database "commit" operation mock
     :return:
     """
     HomeHandler._add_word(('test_word', 1))
     assert add_mock.called is True
+    assert commit_mock.called is True
+
+
+@patch('api.home.views.session.query')
+@patch('api.home.views.session.commit')
+def test_update_word(query_mock, commit_mock):
+    """
+    Testing update word method.
+    :param query_mock: A database "query" operation mock
+    :param commit_mock: A database "commit" operation mock
+    :return:
+    """
+    word_id = uuid.uuid4()
+    new_count = 3
+    HomeHandler._update_word(word_id, new_count)
+    assert query_mock.called is True
     assert commit_mock.called is True
