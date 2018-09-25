@@ -6,11 +6,7 @@ of all words parsed.
 
 # General comments
 
-A lot of fun as I never clearly dockerize a whole app (api+database) until
-this task. Also discovered Tornado (I was used to Flask and Django) and its
-testing environment.
-
-I focused most of my energy on Code design + Docker + minimal test coverage.
+I focused most of my energy on Code design + minimal test coverage + Docker.
 
 Way less on the security aspects (private key in a file, config variables ...)
 and the overall frontend side of things that I clearly stole a bit
@@ -19,13 +15,12 @@ everywhere on the web.
 
 # Docker installation
 
-- Just run:
+Just run:
 
-docker-compose up --build
+- docker-compose up --build
 
 And you should be happy. Run the app on http://127.0.0.1:8000
 
-docker-container up
 
 # Manual installation:
 
