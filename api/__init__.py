@@ -14,7 +14,7 @@ KEY = RSA.importKey(open(RSA_KEYFILE).read())
 
 # Database for the API
 pymysql.install_as_MySQLdb()
-url = 'mysql://root:rootroot@localhost:3306/octopus'
+url = 'mysql://root:rootroot@database:3306/octopus'
 engine = sqlalchemy.create_engine(url)
 session = sqlalchemy.orm.scoped_session(sqlalchemy.orm.sessionmaker())
 session.configure(bind=engine, autoflush=False, expire_on_commit=False)

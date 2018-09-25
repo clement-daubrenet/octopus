@@ -131,7 +131,7 @@ class HomeHandler(RequestHandler):
                 next(filter(lambda x: x[0] == parsed_word[0].encode(),
                             database_words))
             self._update_word(database_word[1], parsed_word[1])
-        except StopIteration:
+        except (StopIteration, TypeError):
             self._add_word(parsed_word)
 
     @staticmethod
