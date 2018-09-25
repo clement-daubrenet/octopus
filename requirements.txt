@@ -9,5 +9,5 @@ tornado
 pytest
 psycopg2
 pymysql
-pycrypto==2.6.1
+pycrypto
 pycryptodome
