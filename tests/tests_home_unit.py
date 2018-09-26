@@ -14,18 +14,6 @@ def test_get_most_common_words():
     assert result == [('business', 2), ('article', 2), ('stuff', 1)]
 
 
-def test_get_most_common_words_upper_case_lower_case():
-    """
-    Testing lower case/upper case mix up: they should be counted as the same
-    word in lower case.
-    """
-    result = HomeHandler._get_most_common_words(['Business',
-                                                 'business',
-                                                 'bUsiness',
-                                                 'busineSS'], 10)
-    assert result == [('business', 4)]
-
-
 def test_get_most_common_words_edge_case_1():
     """
     Testing 1 element scenario.
