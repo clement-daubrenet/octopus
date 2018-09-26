@@ -6,7 +6,7 @@ from tornado.web import RequestHandler
 
 class AdminHandler(RequestHandler):
     """
-    This class is in charge of handling the
+    This class is in charge of handling the admin page.
     """
     def get(self):
         """
