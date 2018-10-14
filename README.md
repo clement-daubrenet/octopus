@@ -19,21 +19,7 @@ the current count):
 
 ![Alt text](/docs/step5.png?raw=true "Word Cloud Admin")
 
-
-
-## 2. General comments
-
-I focused most of my energy on code design + minimal test coverage + Docker.
-
-Way less on the security aspects (private key in a file, config variables ...)
-and the overall frontend side of things that I clearly stole a bit
-everywhere on the web.
-
-Warning 1: the private key in a file is a security problem. It should be
-at least stored in an environment variable.
-
-
-## 3. Docker installation
+## 2. Docker installation
 
 Just run:
 
@@ -44,7 +30,7 @@ And you should be happy. Run the app on http://127.0.0.1:8000
 Warning 2: You might have to change the ports (in the docker-compose.yml) of the web app and database depending on the allocations on your machine.
 I tested this app on 2 different machines and had to change the ports (e.g: 8000 to 8001 and 5000 to 6000).
 
-## 4. Manual installation:
+## 3. Manual installation:
 
 If things go wrong and you want to do it old school:
 
@@ -76,7 +62,7 @@ Start using the web page:
 - By default, go on http://127.0.0.1:8888/
 
 
-## 5. Tests:
+## 4. Tests:
 
 Integration tests for home page:
 
